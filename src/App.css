@@ -13,6 +13,11 @@ header {
   z-index: 1000;
   padding: 1rem 2rem;
   transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+header.hidden {
+  transform: translateY(-100%);
 }
 
 header h1 {
@@ -577,24 +582,39 @@ footer p {
    ========================= */
 @media (max-width: 768px) {
   header {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+    position: relative;
   }
   
   header h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
   }
   
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .hero {
+    margin-top: 0;
+    padding-top: 8rem;
   }
   
   .hero-content {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+    padding: 1rem;
   }
   
   .hero-text h1 {
