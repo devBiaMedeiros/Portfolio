@@ -17,7 +17,7 @@ export default function Projects() {
         {
             title: "Projetos do Curso Desenvolver",
             description: "Coleção de exercícios práticos desenvolvidos durante o curso, aplicando conceitos de HTML, CSS, JavaScript e outras tecnologias web modernas.",
-            technologies: ["HTML5", "CSS3", "JavaScript", "Git"],
+            technologies: ["HTML", "CSS", "JavaScript", "Git"],
             githubLink: "https://github.com/devBiaMedeiros"
         },
         {
